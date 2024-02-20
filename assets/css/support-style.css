@@ -1,0 +1,803 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Lota;
+    src: url(../fonts/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Regular.otf);
+}
+
+@font-face {
+    font-family: LotaLight;
+    src: url(../fonts/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Extra\ Light.otf);
+}
+
+@font-face {
+    font-family: LotaBlack;
+    src: url(../fonts/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Black.otf);
+}
+
+@font-face {
+    font-family: LotaBold;
+    src: url(../fonts/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Bold.otf);
+}
+.row{
+    display: flex;
+}
+
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33%;
+}
+
+.col-8{
+    width: 66.66%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33%;
+}
+
+.col-11{
+    width: 91.66%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.navbar{
+    height: 42px;
+    background-color: #000000;
+}
+
+
+.navbar .left-navbar ul{
+    width: fit-content;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+}
+
+.navbar .left-navbar ul li{
+    width: 100px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s;
+    border: none;
+}
+
+.navbar .left-navbar ul li:nth-child(1){
+    width: 60px;
+    padding: 5px;
+}
+
+.navbar .left-navbar ul li:hover{
+    background-color: rgba(255,255,255,.2);
+    border-bottom: 3px solid #33C0E2;
+}
+
+.navbar .left-navbar ul li a{
+    font-family: LotaLight;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.navbar .right-navbar{
+    margin: 0 110px;
+}
+
+.navbar .right-navbar ul{
+    width: fit-content;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+}
+
+.navbar .right-navbar ul li{
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navbar .right-navbar ul li:hover{
+    background-color: rgba(255,255,255,.2)
+}
+
+.navbar .right-navbar ul li:nth-child(1){
+    width: 100px;
+    border-left: 1px solid rgba(255,255,255,.2);
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+.navbar .right-navbar ul li:nth-child(2){
+    border-right: 1px solid rgba(255,255,255,.2);
+    padding: 5px;
+}
+
+.navbar .right-navbar ul li:nth-child(3){
+    width: 170px;
+    border-right: 1px solid rgba(255,255,255,.2);
+    padding: 5px;
+}
+
+.navbar .right-navbar ul li:nth-child(4){
+    width: 60px;
+    padding: 5px;
+}
+
+.navbar .right-navbar ul li:nth-child(5){
+    width: 50px;
+}
+
+.navbar .right-navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: LotaLight;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+
+.navbar .right-navbar ul li a img{
+    width: 24px;
+    height: 12px;
+    background-color: white;
+    margin-top: 5px;
+}
+.navbar .right-navbar ul li i{
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .right-navbar .fa-caret-down{
+    color: grey;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+.navbar-bottom{
+    width: 100%;
+    height: 594px;
+    background-image: url("../images/support-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.navbar-bottom .logo{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.navbar-bottom .right-nav{
+    float: right;
+}
+
+.navbar-bottom .right-nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.navbar-bottom .right-nav ul li{
+    border: 0px solid white;
+    border-radius: 20px;
+    transition: 0.5s;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    padding: 13px 16px;
+}
+
+.navbar-bottom .right-nav ul li:hover{
+    background: rgba(255,255,255,.1)
+}
+
+.navbar-bottom .right-nav ul a{
+    text-decoration: none;
+    color: white;
+    font-family: Lota;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.navbar-bottom .right-nav .fa-caret-down{
+    color: grey;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.navbar-bottom .banner{
+    padding: 80px 0 130px;
+    position: absolute;
+}
+
+.navbar-bottom .banner h1{
+    width: 20px;
+    font-size: 52px;
+    font-family: Lota;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.navbar-bottom .banner p{
+    width: 456px;
+    font-size: 16px;
+    font-family: Lota;
+    color: #cbc5df;
+    margin-bottom: 32px ;
+}
+
+.navbar-bottom .banner .subtitle{
+    font-size: 12px;
+    font-family: Lota;
+    color: #cbc5df;
+    margin-bottom: 20px ;
+    opacity: 0.5;
+}
+
+.navbar-bottom .banner .input input{
+    width: 744px;
+    padding: 14px 48px;
+    font-size: 14px;
+    border-radius: 12px;
+    border: solid 1px #ddd;
+    background-color: #fff; 
+    color: grey;
+    font-family: Lota;
+}
+
+.navbar-bottom .banner .input button{
+    width: 168px;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-family: LotaBold;
+    border-radius: 26px;
+    margin-left: 24px;
+    background: #f35b0c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar-bottom .banner .input button:hover{
+    background: #d54f0a;
+}
+
+.navbar-bottom .banner .hashtags{
+    display: flex;
+    margin-top: 50px;
+}
+
+.navbar-bottom .banner .hashtags span{
+    color: white;
+    font-size: 12px;
+    margin-right: 18px;
+    font-family: LotaBold;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-bottom .banner .hashtags .tags ul{
+    display: flex;
+    list-style: none;
+}
+
+
+.navbar-bottom .banner .hashtags .tags ul li a{
+    border-radius: 13px;
+    padding: 5px 19px 4px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-family: LotaBlack;
+    margin: 6px;
+    background-color: rgba(255,255,255,.38);
+    transition: 0.5s;
+}
+
+.navbar-bottom .banner .hashtags .tags ul li a:hover{
+    opacity: 0.7;
+}
+
+
+
+
+#divisions .items{
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#divisions .items .cart{
+    width: 168px;
+    height: 172px;
+    padding: 31px 16px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 #e8e8e8, 0 6px 20px 0 #e8e8e8;
+    box-shadow: inset 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#divisions .items .cart:nth-child(2){
+    background: #5c2483;
+}
+
+#divisions .items .cart:nth-child(2) i{
+    color: #fff;
+}
+
+#divisions .items .cart:nth-child(2) p{
+    color: #fff;
+}
+
+#divisions .items .cart:hover{
+    background: #5c2483;
+}
+
+#divisions .items .cart i{
+    font-size: 35px;
+    color: #5c2483;
+}
+
+#divisions .items .cart:hover i{
+   color: #fff;
+}
+
+#divisions .items .cart p{
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: LotaBold;
+    color: #000;
+}
+
+#divisions .items .cart:hover p{
+    color: #fff;
+}
+
+
+#faq{
+    padding-top: 80px;
+}
+
+
+#faq h1{
+    font-size: 32px;
+    color: #000000;
+    font-family: LotaBlack;
+    margin-bottom: 30px;
+}
+
+#faq .question{
+    padding: 24px;
+    width: 100%;
+    border: none;
+    box-shadow: 0 4px 8px 0 #e8e8e8, 0 6px 20px 0 #e8e8e8;
+    margin-bottom:8px;
+    border-radius: 16px;
+}
+
+#faq .question button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1080px;
+    font-size: 16px;
+    font-family: LotaBold;
+    border-radius: 0;
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    transition: 0.5s;
+}
+
+
+#faq .question button:hover{
+    color: #5c2483;
+}
+
+
+
+#other-questions{
+    padding-top: 80px;
+}
+
+
+#other-questions h1{
+    font-size: 32px;
+    color: #000000;
+    font-family: LotaBlack;
+    margin-bottom: 30px;
+}
+
+
+#other-questions .category button{
+    width: 330px;
+}
+
+
+
+#other-questions button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 17px;
+    font-size: 16px;
+    font-family: LotaBold;
+    border-bottom: 1px solid ;
+    border-radius: 16px;
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    box-shadow: 0 10px 35px 0 rgba(0,0,0,.04);
+    transition: 0.5s;
+}
+
+ 
+#other-questions button:hover{
+    color: #5c2483;
+}
+
+
+#application{
+    padding-top: 120px;
+}
+
+#application .app-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#application .app-image img{
+    width: 503px;
+    height: 579px;
+}
+
+#application .info{
+    padding-top: 120px;
+    padding-left: 50px;
+}
+
+
+#application .info h2{
+    font-size: 32px;
+    font-family: LotaBlack;
+    width: 320px;
+    margin-bottom: 19px;
+}
+
+
+#application .info p{
+    font-size: 14px;
+    font-family: Lota;
+    width: 320px;
+    color: #818181;
+}
+
+#application .info .stores{
+    margin-top: 31px;
+}
+
+#application .info .stores a i{
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+#application .info .stores a img{
+    margin-block: -7px;
+}
+
+#application .info .stores a{
+    padding: 8px 16px;
+    height: 45  px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #000;
+    border-radius: 21px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: LotaBold;
+    transition: 0.5s;
+}
+#application .info .stores a:hover{
+    background: rgba(237,237,237,.6);
+}
+
+#application .info .stores a:nth-child(2){
+    margin-left: 8px;
+    margin-top: 40px;
+}
+
+#application .info .cabinet-info{
+    display: flex;
+    margin-top: 90px;
+}
+
+#application .info .cabinet-info i{
+    font-size: 22px;
+    margin-right: 16px;
+}
+
+
+#application .info .cabinet-info p{
+    display: flex;
+    font-size: 12px;
+}
+
+
+
+#footer{
+    width: 100%;
+    height: 418px;
+    background-color: #000;
+    margin-top: 90px;
+}
+
+#footer .main{
+    padding: 48px 0px 12px;
+}
+
+#footer .footer-top .lang{
+    padding: 9px 3px;
+    margin-top: 9px;
+    color: #b2b2b2;
+    font-family: Lota;
+    font-size: 14px;
+    width: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .footer-top .links a{
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: LotaBold;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+#footer .footer-top .links ul{
+    list-style: none;
+}
+
+#footer .footer-top .links ul li{
+    margin-top: 7px;
+}
+
+#footer .footer-top .links ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Lota;
+    color: #b2b2b2;
+    transition: 0.5s;
+}
+
+
+#footer .footer-top .links a:hover{
+    color: #968bc0;
+}
+
+
+#footer .border{
+    width: 100%;
+    border-top: 1px solid rgba(216,216,216,.4);
+    margin-top: 48px;
+}
+
+
+#footer .footer-bottom{
+    padding-top: 24px;
+
+}
+
+#footer .footer-bottom .relation p:first-child{
+    color: white;
+    font-size: 14px;
+    font-family: Lota;
+}
+
+#footer .footer-bottom .relation p:first-child span{
+    color: #b2b2b2;
+    margin-right: 10px;
+}
+
+
+#footer .footer-bottom .relation p:last-child{
+    font-size: 14px;
+    font-family: Lota;
+    color: #b2b2b2;
+    margin-top: 100px;
+}
+
+
+#footer .footer-bottom .download span{
+    display: flex;
+    font-size: 12px;
+    color: #b2b2b2;
+    font-family: Lota;
+    margin-bottom: 25px;
+}
+
+#footer .footer-bottom .download a{
+    text-decoration: none;
+    color:  #b2b2b2;
+    font-family: Lota;
+    font-size: 14px;
+    border-radius: 20px;
+    width: 141px;
+    height: 40px;
+    padding: 13px 23px 13px 20px;
+    margin: 0px 4px;
+    background: rgba(255,255,255,.15);
+    transition: all linear .4s;
+}
+
+#footer .footer-bottom .download a i{
+    margin-right: 10px;
+}
+
+#footer .footer-bottom .download a img{
+    margin-block: -7px;
+}
+
+#footer .footer-bottom .download a:nth-child(3) img{
+    margin-block: -7px;
+    margin-right: 5px;
+}
+
+#footer .footer-bottom .download a:hover{
+    color: #fff;
+    background: rgba(242,242,242,.25);
+}
+
+#footer .footer-bottom .subscription{
+    margin-left: 40px;
+}
+
+#footer .footer-bottom .subscription span{
+    display: flex;
+    font-size: 12px;
+    color: #b2b2b2;
+    font-family: Lota;
+    margin-bottom: 10px;    
+}
+
+#footer .footer-bottom .subscription .email-input input{
+    width: 224px;
+    padding: 10px 16px 9px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: Lota;
+    color: #fff;
+    border: 0;
+    background: rgba(255,255,255,.15);
+    transition: 0.5s;
+}
+
+#footer .footer-bottom .subscription .email-input input:hover{
+    color: #fff;
+    background: rgba(242,242,242,.25);
+}
+
+#footer .footer-bottom .subscription .email-input input:focus{
+    border: none;
+}
+
+#footer .footer-bottom .subscription .email-input a{
+    text-decoration: none;
+    padding: 9px 22px 10px 22px;
+    color: #fff;
+    background: rgba(255,255,255,.15);
+    border-radius: 20px;
+    font-family: Lota;
+    font-size: 14px;
+    transition: 0.6s;
+}
+
+#footer .footer-bottom .subscription .email-input a:hover{
+    color: #fff;
+    background: rgba(242,242,242,.25);
+}
+
+
+#footer .footer-bottom .subscription .socials{
+    float: right;
+}
+
+#footer .footer-bottom .subscription .socials ul{
+    display: flex;
+    width: 120px;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#footer .footer-bottom .subscription .socials ul li i{
+    font-size: 24px;
+    color: rgba(216,216,216,.4);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#footer .footer-bottom .subscription .socials ul li i:hover{
+    font-size: 26px;
+    color: white;
+}

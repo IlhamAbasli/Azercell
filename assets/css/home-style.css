@@ -1,0 +1,1454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Lota;
+    src: url(../fonts/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Regular.otf);
+}
+
+@font-face {
+    font-family: LotaLight;
+    src: url(../fonts/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Extra\ Light.otf);
+}
+
+@font-face {
+    font-family: LotaBlack;
+    src: url(../fonts/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Black.otf);
+}
+
+@font-face {
+    font-family: LotaBold;
+    src: url(../fonts/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Bold.otf);
+}
+.row{
+    display: flex;
+}
+
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33%;
+}
+
+.col-8{
+    width: 66.66%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33%;
+}
+
+.col-11{
+    width: 91.66%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.navbar{
+    height: 42px;
+    background-color: #000000;
+}
+
+
+.navbar .left-navbar ul{
+    width: fit-content;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+}
+
+.navbar .left-navbar ul li{
+    width: 100px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s;
+    border: none;
+}
+
+.navbar .left-navbar ul li:nth-child(1){
+    width: 60px;
+    padding: 5px;
+}
+
+.navbar .left-navbar ul li:hover{
+    background-color: rgba(255,255,255,.2);
+    border-bottom: 3px solid #33C0E2;
+}
+
+.navbar .left-navbar ul li a{
+    font-family: LotaLight;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.navbar .right-navbar{
+    margin: 0 110px;
+}
+
+.navbar .right-navbar ul{
+    width: fit-content;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+}
+
+.navbar .right-navbar ul li{
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navbar .right-navbar ul li:hover{
+    background-color: rgba(255,255,255,.2)
+}
+
+.navbar .right-navbar ul li:nth-child(1){
+    width: 100px;
+    border-left: 1px solid rgba(255,255,255,.2);
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+.navbar .right-navbar ul li:nth-child(2){
+    border-right: 1px solid rgba(255,255,255,.2);
+    padding: 5px;
+}
+
+.navbar .right-navbar ul li:nth-child(3){
+    width: 170px;
+    border-right: 1px solid rgba(255,255,255,.2);
+    padding: 5px;
+}
+
+.navbar .right-navbar ul li:nth-child(4){
+    width: 60px;
+    padding: 5px;
+}
+
+.navbar .right-navbar ul li:nth-child(5){
+    width: 50px;
+}
+
+.navbar .right-navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: LotaLight;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+
+.navbar .right-navbar ul li a img{
+    width: 24px;
+    height: 12px;
+    background-color: white;
+    margin-top: 5px;
+}
+.navbar .right-navbar ul li i{
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .right-navbar .fa-caret-down{
+    color: grey;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+.navbar-bottom{
+    width: 100%;
+    height: 644px;
+    background-image: url("../images/xl.png.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.navbar-bottom .logo{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.navbar-bottom .right-nav{
+    float: right;
+}
+
+.navbar-bottom .right-nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.navbar-bottom .right-nav ul li{
+    border: 0px solid white;
+    border-radius: 20px;
+    transition: 0.5s;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    padding: 13px 16px;
+}
+
+.navbar-bottom .right-nav ul li:hover{
+    background: rgba(255,255,255,.1)
+}
+
+.navbar-bottom .right-nav ul a{
+    text-decoration: none;
+    color: white;
+    font-family: Lota;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.navbar-bottom .right-nav .fa-caret-down{
+    color: grey;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+
+.navbar-bottom h1{
+    width: 490px;
+    font-size: 60px;
+    font-family: Lota;
+    position: absolute;
+    margin-top: 119px;
+    color: white;
+    line-height: 1.12;
+    font-weight: 700;
+}
+
+.navbar-bottom .phone-image{
+    float: right;
+    margin-top: 40px;
+}
+
+.navbar-bottom .phone-image img{
+    width: 640px;
+    height: 540px;
+}
+
+
+.navbar-bottom .swiper{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 108px;
+    background: rgba(0,0,0,.5);
+}
+
+
+
+#tarrifs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#tarrifs .content{
+    width: 100%;
+    height: 483px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#tarrifs .content h2{
+    font-size: 52px;
+    font-family: LotaBold;
+    color: #000000;
+}
+
+
+#tarrifs .content p{
+    font-family: Lota;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 24px;
+    color: rgba(0,0,0,.5);
+}
+
+#tarrifs .content a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 52px;
+    background-color: #f35b0c;
+    font-family: LotaBold;
+    color: white;
+    border-radius: 26px;
+    margin-top: 56px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#tarrifs .content a:hover{
+    background-color: #d54f0a;
+}
+
+
+
+#tarrifs .image{
+    display: flex;
+    width: 100%;
+    height: 483px;
+    align-items: center;
+    justify-content: right;
+}
+
+
+
+
+#packets .profitables{
+    width: 100%;
+    height: 767px;
+}
+
+#packets .profitables .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#packets .profitables .header h2{
+    font-family: LotaBlack;
+    color: #000000;
+    font-size: 32px;
+}
+
+
+#packets .profitables .header a{
+    text-decoration: none;
+    font-family: LotaBold;
+    color: #818181;
+    font-size: 16px;
+    height: fit-content;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 27px;
+}
+
+#packets .profitables .header a:hover{
+    color: #5C2483;
+}
+
+#packets .profitables .cart-1{
+    width: 356px;
+    height: 687px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #e8e8e8, 0 6px 20px 0 #e8e8e8;
+    margin-top: 20px;
+}
+
+#packets .profitables .cart-1 .cart-header{
+    width: 356px;
+    height: 161px;
+    background-image: url(../images/cart-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 24px 28px;
+}
+
+
+#packets .profitables .cart-1 .cart-header-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#packets .profitables .cart-1 .cart-header-top span:nth-child(1) {
+    color: white;
+    font-size: 24px;
+    font-family: LotaBlack;
+}
+
+#packets .profitables .cart-1 .cart-header-top span:nth-child(2) {
+    background-color: rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    border-radius: 13px;
+    padding: 0px 20px;
+    color: white;
+    font-size: 12px;
+    font-family: LotaBlack;
+
+}
+
+
+#packets .profitables .cart-1 .cart-header-bottom ul{
+    margin-top: 25px;
+    display: flex;
+    list-style: none;
+    justify-content:space-between;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 13px;
+}
+
+
+#packets .profitables .cart-1 .cart-header-bottom ul li{
+    display: flex;
+    align-items: center;
+    border-radius: 13px;
+    padding: 20px;
+    color: white;
+    font-size: 12px;
+    font-family: LotaBlack;
+    font-weight: 500;
+    height: 47px;
+    width: 57px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+#packets .profitables .cart-1 .cart-header-bottom ul li:hover{
+    background-color: white;
+    justify-content: center;
+    color: #5C2483;
+    height: 56px;
+    width: 80px;
+    transition: all 0.7s;
+}
+
+
+#packets .profitables .cart-1 .cart-header-bottom ul li:hover span span{
+    color: #5C2483;
+    display: inline;
+    font-weight: bold;
+}
+
+
+#packets .profitables .cart-1 .cart-header-bottom ul li span span{
+    display: none;
+}
+
+
+
+#packets .profitables .cart-1 .cart-body{
+    padding: 32px 24px 0;
+} 
+
+
+#packets .profitables .cart-1 .cart-body .cart-item{
+    display: flex;
+    margin: 0 0 16px;
+} 
+
+#packets .profitables .cart-1 .cart-body .cart-item .cart-item-content{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 48px;
+} 
+
+
+#packets .profitables .cart-1 .cart-body .cart-item .cart-item-content span{
+    font-size: 16px;
+    font-family: LotaBold;
+    color: #000000;
+}
+
+#packets .profitables .cart-1 .cart-body .cart-item .cart-item-content p{
+    font-size: 14px;
+    font-family: Lota;
+    color: #b2b2b2;
+}
+
+#packets .profitables .cart-1 .cart-body .cart-item i{
+    font-size: 36px;
+    margin: 0 16px 0 0;
+    color:#5C2483;
+} 
+
+
+#packets .profitables .cart-1 .cart-body .cart-item:nth-child(2) i{
+    margin: 0 20px 0 5px;
+} 
+
+
+
+#packets .profitables .cart-1 .cart-body .cart-item-content .icons img:nth-child(2){
+    width: 40px;
+} 
+
+#packets .profitables .cart-1 .cart-body .cart-item-content .icons {
+    float: right;
+} 
+
+
+#packets .profitables .cart-1 .cart-body .info p{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    color: #b2b2b2;
+    font-family: Lota;
+    margin-top: 100px;
+} 
+
+
+#packets .profitables .cart-1 .cart-body .buttons{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 150px;
+} 
+
+#packets .profitables .cart-1 .cart-body .buttons a{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    text-decoration: none;
+} 
+
+#packets .profitables .cart-1 .cart-body .buttons a:nth-child(1){
+    background: #f35b0c;
+    color: #fff;
+    font-family: LotaBold;
+    transition: 0.5s;
+} 
+
+#packets .profitables .cart-1 .cart-body .buttons a:nth-child(1):hover{
+    background:#d54f0a;
+    color: #fff;
+    font-family: LotaBold;
+} 
+
+
+#packets .profitables .cart-1 .cart-body .buttons a:nth-child(2){
+    background: rgba(243,91,12,.1);
+    color: #f35b0c;
+    font-family: Lota;
+    transition: 0.5s;
+} 
+
+#packets .profitables .cart-1 .cart-body .buttons a:nth-child(2):hover{
+    background:#d54f0a;
+    color: #fff;
+}
+
+
+
+#packets .internet{
+
+}
+#packets .internet .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 41px;
+}
+
+#packets .internet .header h2{
+    font-family: LotaBlack;
+    color: #000000;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+
+#packets .internet .header a{
+    text-decoration: none;
+    font-family: LotaBold;
+    color: #818181;
+    font-size: 16px;
+    height: fit-content;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+#packets .internet .header a:hover{
+    color: #5C2483;
+}
+
+
+#packets .internet .card-1{
+    width: 360px;
+    height: 268px;
+    margin: 12px 12px 0;
+    border-radius: 16px;
+    background-image: url(../images/bg-cards.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#packets .internet .card-1 img{
+    float: inline-end;
+    margin-top: 35px;
+    border-bottom-right-radius: 16px;
+}
+
+#packets .internet .card-items{
+    width: 320px;
+    height: 236px;
+    padding: 24px 24px 28px;
+}
+
+#packets .internet .card-items span{
+    font-family: LotaBold;
+    font-size: 12px;
+    color: white;
+    background: rgba(255,255,255,.2);
+    padding: 2px 20px 2px;
+    border-radius: 13px;
+    height: 20px;
+}
+
+#packets .internet .card-items .title{
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-top: 30px;
+}
+
+
+#packets .internet .card-items .title h3{
+    font-size: 24px;
+    font-family: LotaBlack;
+    color: white;
+}
+
+#packets .internet .card-items .title img{
+    margin: 0;
+}
+
+#packets .internet .card-items p{
+    width: 100px;
+    font-size: 12px;
+    color: #CBC5DF;
+    font-family: Lota;
+    margin-top: -10px;
+    
+}
+
+#packets .internet .card-items button{
+    background-color: #fff;
+    color: #5C2483;
+    font-family: LotaBlack;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    margin-top: 10px;
+}
+
+#number{
+    margin-top: 40px;
+}
+
+#number .number-content{
+    width: 100%;
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#number .number-content h1{
+    font-size: 52px;
+    font-family: LotaBold;
+    color: #000000;
+}
+
+#number .number-content a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 52px;
+    background-color: #f35b0c;
+    font-family: LotaBold;
+    color: white;
+    border-radius: 26px;
+    margin-top: 56px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#number .number-content a:hover{
+background-color: #d54f0a;
+}
+
+
+
+#app{
+    margin-top: 150px;
+}
+
+#app .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 41px;
+}
+
+#app .header h2{
+    font-family: LotaBlack;
+    color: #000000;
+    font-size: 32px;
+}
+
+#app .header a{
+    text-decoration: none;
+    font-family: LotaBold;
+    color: #818181;
+    font-size: 16px;
+    height: fit-content;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#app .header a:hover{
+    color: #5C2483;
+}
+
+#app .cart{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#app .cart .cart-item{
+    width: 163px;
+    height: 195px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 #e8e8e8, 0 6px 20px 0 #e8e8e8;
+    margin-right: 20px;
+    padding: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#app .cart .cart-item:hover{
+    width: 170px;
+    height: 206px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#app .cart .cart-item:nth-child(1):hover{
+    background-image: url("../images/cart-bg1.webp");
+}
+#app .cart .cart-item:nth-child(2):hover{
+    background-image: url("../images/home-card-blutv.png.webp");
+}
+#app .cart .cart-item:nth-child(3):hover{
+    background-image: url("../images/cart-busuu-bg.png");
+    padding: 16px;
+}
+#app .cart .cart-item:nth-child(4):hover{
+    background-image: url("../images/home-card-kids.png.webp");
+}
+#app .cart .cart-item:nth-child(5):hover{
+    background-image: url("../images/hero-background-1.png");
+}
+
+#app .cart .cart-item:hover .fa{
+    display: none;
+}
+
+#app .cart .cart-item:hover h3{
+    display: flex;
+    margin-top: 40px;
+    width: 152px;
+}
+
+#app .cart .cart-item h3{
+    display: none;
+    font-family: LotaBold;
+    color: #fff;
+    font-size: 16px;
+}
+
+#app .cart .cart-item:hover span{
+    display: none;
+}
+
+#app .cart .cart-item:hover p{
+    display: none;
+}
+
+#app .cart .cart-item:hover h5{
+    display: none;
+}
+
+
+#app .cart .cart-item img{
+    width: 42px;
+    height: 42px;
+}
+
+#app .cart .cart-item .user-ratings .fa{
+    font-size: 10px;
+}
+
+#app .cart .cart-item .user-ratings .checked{
+    padding-top: 10px;
+    color:#f35b0c;
+}
+
+#app .cart .cart-item .user-ratings .not{
+    color:#f35b0c;
+    opacity: 0.2;
+}
+
+#app .cart .cart-item .user-ratings span:last-child{
+    color:#f35b0c;
+    font-size: 12px;
+    font-family: Lota;
+}
+
+
+#app .cart .cart-item h5{
+    font-size: 16px;
+    font-family: Lota;
+    margin-top: 10px;
+}
+
+#app .cart .cart-item p{
+    font-size: 12px;
+    font-family: Lota;
+    color: #818181;
+    margin-top: 10px;
+}
+
+#app .cart .cart-item .cart-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#app .cart .cart-item .cart-bottom p{
+margin: 0;
+}
+
+#app .cart .cart-item .cart-bottom span{
+    font-size: 12px;
+    font-family: Lota;
+    color: #000000;
+}
+
+
+#application{
+    margin-top: 120px;
+}
+
+
+#application .application-image{
+    display: flex;
+    justify-content: center;
+}
+
+#application .info h2{
+    font-size: 52px;
+    font-family: LotaBold;
+    width: 320px;
+    margin: 43px 0px 19px;
+}
+
+
+#application .info p{
+    font-size: 14px;
+    font-family: Lota;
+    width: 320px;
+    color: #818181;
+}
+
+#application .info .stores{
+    margin-top: 31px;
+}
+
+#application .info .stores a i{
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+#application .info .stores a img{
+    margin-block: -7px;
+}
+
+#application .info .stores a{
+    padding: 8px 16px;
+    height: 45  px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #000;
+    border-radius: 21px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: LotaBold;
+    transition: 0.5s;
+}
+#application .info .stores a:hover{
+    background: rgba(237,237,237,.6);
+}
+
+#application .info .stores a:nth-child(2){
+    margin-left: 8px;
+    margin-top: 40px;
+}
+
+#application .info .cabinet-info{
+    display: flex;
+    margin-top: 90px;
+}
+
+#application .info .cabinet-info i{
+    font-size: 22px;
+    margin-right: 16px;
+}
+
+
+#application .info .cabinet-info p{
+    display: flex;
+    font-size: 12px;
+}
+
+#application .carts{
+    padding-top: 91px;
+}
+
+#application .carts .item{
+    width: 359px;
+    height: 160px;
+    padding: 23px 24px;
+    margin-bottom: 8px;
+    border-radius: 16px;
+    background: rgba(237,237,237,.6);
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#application .carts .item:hover{
+    background-color: #5c2483;  
+}
+
+
+
+
+#application .carts .item:hover{
+    background-color: #5c2483;  
+}
+
+#application .carts .item i{
+    font-size: 35px;
+    color: #7c6eae;
+    margin-right: 19px;
+}
+
+#application .carts .item:hover i{
+    color: rgba(255,255,255,.6);  
+}
+
+
+#application .carts .item .desc h3{
+    font-size: 16px;
+    line-height: 1.38;
+    margin-bottom: 5px;
+    font-family: LotaBold;
+}
+
+#application .carts .item:hover .desc h3{
+    color: white;
+}
+
+#application .carts .item .desc p{
+    font-size: 14px;
+    line-height: 1.42;
+    color: #818181;
+    margin: 0 0 10px;
+    font-family: Lota;
+}
+
+#application .carts .item:hover .desc p{
+    color: rgba(255,255,255,.6);
+}
+
+
+
+#promo{
+    width: 100%;
+    height: 599px;
+    background-image: url(../videos/promo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#promo .content{
+    padding-top: 218px;
+}
+#promo .content h1{
+    font-size: 52px;
+    font-family: LotaBold;
+    color: #fff;
+    width: 455px;
+    margin-bottom: 16px;
+}
+
+#promo .content p{
+    font-size: 14px;
+    font-family: Lota;
+    color: #b2b2b2;
+}
+
+#bank{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+
+#bank .payment-left p{
+    font-size: 12px;
+    font-family: Lota;
+    color: #818181;
+    margin-bottom: 9px;
+}
+
+#bank .payment-left h3{
+    width: 260px;
+    font-size: 32px;
+    font-family: LotaBlack;
+    color: black;
+    margin-bottom: 31px;
+}
+
+#bank .form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+#bank .form-input label{ 
+    font-size: 12px;
+    font-family: Lota;
+    color: #818181;
+    margin-bottom: 6px;
+}
+
+#bank .form-input input{
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: solid 1px #ddd;
+    background-color: #fff;
+    width: 320px;
+    color: #000;
+    font-size: 16px;
+    font-family: LotaBold;
+}
+
+
+#bank .payment-input{
+    display: flex;
+    margin-top: 32px;
+}
+
+#bank .payment-input .input-left{
+    display: flex;
+    flex-direction: column;
+    margin-right: 36px;
+    margin-bottom: 16px;
+}
+
+#bank .payment-input .input-left label{
+    font-size: 12px;
+    font-family: Lota;
+    color: #818181;
+    margin-bottom: 6px;
+}
+
+#bank .payment-input .input-left input{
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: solid 1px #ddd;
+    width: 124px;
+    position: relative;
+    font-size: 16px;
+    font-family: LotaBold;
+}
+
+#bank .payment-input .input-left i{
+    font-size: 18px;
+    position: relative;
+    bottom: 33px;
+    right: -92px;
+    color: #a1aebc;
+    z-index: 0;
+}
+
+#bank .payment-input .input-right{
+}
+
+#bank .payment-input .input-right p{
+    font-size: 12px;
+    font-family: Lota;
+    color: #818181;
+    margin-bottom: 6px;
+}
+
+#bank .payment-input .input-right a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Lota;
+    color: #000;
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    padding: 14px 0 12px;
+    background-color: rgba(46,18,66,.1);
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+#bank .payment-input .input-right a:hover{
+    background-color: #00b0db;
+    color: #fff;
+}
+#bank .btn a{
+    margin-top: 10px;
+    width: 192px;
+    padding: 15px;
+    background: #f35b0c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: LotaBold;
+    border-radius: 26px;
+    transition: 0.5s;
+}
+
+#bank .btn a:hover{
+    background:#d54f0a;
+}
+
+#bank .payment-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#bank .payment-card .card{
+    background-image: url("../images/new-card.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 456px;
+    height: 343px;
+    padding: 131px 39px 85px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bank .payment-card .card .card-input{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+}
+
+#bank .payment-card .card .card-input label{
+    font-family: Lota;
+    color: #cbc5df; 
+    font-size: 12px;
+    margin-bottom: 6px;
+} 
+
+#bank .payment-card .card .card-input input{
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: solid 1px #ddd;
+    background-color: #fff;
+    line-height: 1.38;
+    color: #000;
+    font-size: 16px;
+    font-family: LotaBlack;
+    text-align: center;
+}
+
+
+#footer{
+    width: 100%;
+    height: 418px;
+    background-color: #000;
+    margin-top: 90px;
+}
+
+#footer .main{
+    padding: 48px 0px 12px;
+}
+
+#footer .footer-top .lang{
+    padding: 9px 3px;
+    margin-top: 9px;
+    color: #b2b2b2;
+    font-family: Lota;
+    font-size: 14px;
+    width: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .footer-top .links a{
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: LotaBold;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+#footer .footer-top .links ul{
+    list-style: none;
+}
+
+#footer .footer-top .links ul li{
+    margin-top: 7px;
+}
+
+#footer .footer-top .links ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Lota;
+    color: #b2b2b2;
+    transition: 0.5s;
+}
+
+
+#footer .footer-top .links a:hover{
+    color: #968bc0;
+}
+
+
+#footer .border{
+    width: 100%;
+    border-top: 1px solid rgba(216,216,216,.4);
+    margin-top: 48px;
+}
+
+
+#footer .footer-bottom{
+    padding-top: 24px;
+
+}
+
+#footer .footer-bottom .relation p:first-child{
+    color: white;
+    font-size: 14px;
+    font-family: Lota;
+}
+
+#footer .footer-bottom .relation p:first-child span{
+    color: #b2b2b2;
+    margin-right: 10px;
+}
+
+
+#footer .footer-bottom .relation p:last-child{
+    font-size: 14px;
+    font-family: Lota;
+    color: #b2b2b2;
+    margin-top: 100px;
+}
+
+
+#footer .footer-bottom .download span{
+    display: flex;
+    font-size: 12px;
+    color: #b2b2b2;
+    font-family: Lota;
+    margin-bottom: 25px;
+}
+
+#footer .footer-bottom .download a{
+    text-decoration: none;
+    color:  #b2b2b2;
+    font-family: Lota;
+    font-size: 14px;
+    border-radius: 20px;
+    width: 141px;
+    height: 40px;
+    padding: 13px 23px 13px 20px;
+    margin: 0px 4px;
+    background: rgba(255,255,255,.15);
+    transition: all linear .4s;
+    text-decoration: none;
+}
+
+#footer .footer-bottom .download a i{
+    margin-right: 10px;
+}
+
+#footer .footer-bottom .download a img{
+    margin-block: -7px;
+}
+
+#footer .footer-bottom .download a:nth-child(3) img{
+    margin-block: -7px;
+    margin-right: 5px;
+}
+
+#footer .footer-bottom .download a:hover{
+    color: #fff;
+    background: rgba(242,242,242,.25);
+}
+
+#footer .footer-bottom .subscription{
+    margin-left: 40px;
+}
+
+#footer .footer-bottom .subscription span{
+    display: flex;
+    font-size: 12px;
+    color: #b2b2b2;
+    font-family: Lota;
+    margin-bottom: 10px;    
+}
+
+#footer .footer-bottom .subscription .email-input input{
+    width: 224px;
+    padding: 10px 16px 9px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: Lota;
+    color: #fff;
+    border: 0;
+    background: rgba(255,255,255,.15);
+    transition: 0.5s;
+}
+
+#footer .footer-bottom .subscription .email-input input:hover{
+    color: #fff;
+    background: rgba(242,242,242,.25);
+}
+
+#footer .footer-bottom .subscription .email-input input:focus{
+    border: none;
+}
+
+#footer .footer-bottom .subscription .email-input a{
+    text-decoration: none;
+    padding: 9px 22px 10px 22px;
+    color: #fff;
+    background: rgba(255,255,255,.15);
+    border-radius: 20px;
+    font-family: Lota;
+    font-size: 14px;
+    transition: 0.6s;
+}
+
+#footer .footer-bottom .subscription .email-input a:hover{
+    color: #fff;
+    background: rgba(242,242,242,.25);
+}
+
+
+#footer .footer-bottom .subscription .socials{
+    float: right;
+}
+
+#footer .footer-bottom .subscription .socials ul{
+    display: flex;
+    width: 120px;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#footer .footer-bottom .subscription .socials ul li i{
+    font-size: 24px;
+    color: rgba(216,216,216,.4);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#footer .footer-bottom .subscription .socials ul li i:hover{
+    font-size: 26px;
+    color: white;
+}
